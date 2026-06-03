@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Responsive Layout</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <div class="wrap">
+        <header role="banner">
+        <h1>Flexbox Responsive Layout</h1>
+        <p>This page demonstrates a two-column layout that stacks on tablets/phones.</p>
+        </header>
+
+        <div class="main" role="main">
+        <article aria-label="Main Content">
+            <h2>Article</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Quisquam, nisi.
+                This column grows to occupy available space on larger screens.
+            </p>
+            <p>
+            Try adding more paragraphs and obserce how the layout adapts.
+            Use <code>flex-basis</code>, <code>flex-grow</code>, and 
+            <code>gap</code> to control proportion and spacing.
+            </p>
+        </article>
+
+        <aside aria-label="Sidebar">
+            <h2>Sidebar</h2>
+            <ul>
+                <li><a href="#">Related Link 1</a></li>
+                <li><a href="#">Related link 2</a></li>
+                <li><a href="#">Related link 3</a></li>
+            </ul>
+        </aside>
+        </div>
+
+        <footer role="contentinfo">© 2025 Web & Cloud Technology - Royal University of Phnom Penh</footer>
+    </div>
+</body>
+</html>

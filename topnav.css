@@ -1,0 +1,107 @@
+:root{
+    --bg: #0f172a;
+    --fg: #e2e8f0;
+    --accent: #22c55e;
+    --hover: #1f2937;
+    --focus: #93c5fd;
+}
+
+* {box-sizing: border-box;}
+body{
+    margin: 0;
+    font-family: system-ui, Arial, sans-serif;
+    background: #fff; color: #111;
+}
+
+nav{
+    background: var(--bg);
+    color: var(--fg);
+    position: sticky; top: 0; z-index: 1000;
+}
+
+.nav-inner{
+    max-width: 1100px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+}
+
+.brand a{
+    color: var(--fg);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a{
+    color: var(--fg);
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+}
+
+.menu a:hover{
+    background: var(--hover)
+}
+
+.menu a:focus-visible{
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+}
+
+.toggle{
+    display: none;
+}
+
+.toggle-label{
+    display: none;
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: 6px;
+    border: 1px solid #334155;
+}
+
+.toggle-label:focus-visible{
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+}
+
+.nav-inner{
+    flex-wrap: wrap; gap: 0.5rem;
+}
+
+.menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    background: var(--bg);
+    border-top: 1px solid #334155;
+    padding: 0.5rem 0;
+}
+
+.toggle-label{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--fg);
+}
+
+.toggle:checked + .toggle-label + ul.menu {
+    display: flex;
+}
+
+main{
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
